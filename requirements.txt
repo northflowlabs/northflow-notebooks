@@ -1,6 +1,7 @@
 climval>=0.1.0
 xarray
 numpy
+pandas
 matplotlib
 pystac-client
 jupyter
