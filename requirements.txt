@@ -1,0 +1,6 @@
+climval>=0.1.0
+xarray
+numpy
+matplotlib
+pystac-client
+jupyter
