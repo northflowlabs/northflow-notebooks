@@ -9,6 +9,7 @@ Built by [Northflow Technologies](https://northflow.no) — AI-native infrastruc
 | Notebook | Domain | Run |
 |----------|--------|-----|
 | [CMIP6 Multi-Model Validation](notebooks/cmip6_taylor_diagram.ipynb) | Climate | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/cmip6_taylor_diagram.ipynb) |
+| [Arraylake + climval Integration](notebooks/climval_arraylake_integration.ipynb) | Climate Data Infrastructure | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/climval_arraylake_integration.ipynb) |
 | [Sentinel-3 LST Validation](notebooks/sentinel3_lst_validation.ipynb) | Earth Observation | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/sentinel3_lst_validation.ipynb) |
 
 ## Validation powered by
