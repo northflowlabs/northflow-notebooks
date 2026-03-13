@@ -13,3 +13,11 @@ env/
 # OS/editor artifacts
 .DS_Store
 Thumbs.db
+
+# Generated notebook outputs (plots, reports, API cache)
+notebooks/*.png
+notebooks/*.html
+notebooks/*.json
+notebooks/*.md
+notebooks/.cache*
+.tmp.driveupload/
