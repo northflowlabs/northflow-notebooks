@@ -5,3 +5,7 @@ pandas
 matplotlib
 pystac-client
 jupyter
+openmeteo-requests
+requests-cache
+retry-requests
+meteostat
