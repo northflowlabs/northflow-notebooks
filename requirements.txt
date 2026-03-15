@@ -9,3 +9,5 @@ openmeteo-requests
 requests-cache
 retry-requests
 meteostat
+gcsfs
+zarr
