@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security problem
+    url: https://github.com/northflowlabs
+    about: Please report security problems privately, see SECURITY.md in the repository.
+  - name: Northflow Space and Research
+    url: https://research.northflow.no
+    about: The research systems behind these repositories.
