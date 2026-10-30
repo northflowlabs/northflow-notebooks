@@ -5,8 +5,10 @@ pandas
 matplotlib
 dask
 netcdf4
+h5netcdf
 zarr>=3
 gcsfs
+s3fs
 pystac-client
 meteostat>=2.1
 requests
