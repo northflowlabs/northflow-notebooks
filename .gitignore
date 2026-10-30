@@ -20,4 +20,5 @@ notebooks/*.html
 notebooks/*.json
 notebooks/*.md
 notebooks/.cache*
+notebooks/data/
 .tmp.driveupload/

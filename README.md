@@ -2,7 +2,7 @@
 
 # Northflow notebooks
 
-Reproducible climate validation notebooks built on climval, each one runnable in the browser through Binder.
+Reproducible climate validation notebooks built on climval. Every notebook reads real data from public sources, with no account needed, and every figure comes from that data.
 
 [Research page](https://research.northflow.no/systems/climval) · [climval](https://github.com/northflowlabs/climval) · [Licence](#licence)
 
@@ -12,15 +12,14 @@ Reproducible climate validation notebooks built on climval, each one runnable in
 
 | Run | Notebook | Description | Stack |
 |-----|----------|-------------|-------|
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/era5_station_validation.ipynb) | [**groundtruth**: ERA5 Station Validation](notebooks/era5_station_validation.ipynb) | Validates ERA5 reanalysis against weather station observations across 5 climate zones (synthetic station fallback when Meteostat is unavailable) | `climval` · `xarray` · `openmeteo-requests` · `meteostat` |
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/cmip6_taylor_diagram.ipynb) | [**cmip6-taylor**: CMIP6 Multi-Model Intercomparison](notebooks/cmip6_taylor_diagram.ipynb) | 5 CMIP6 models vs ERA5 over Europe with Taylor diagram and metric scorecard | `climval` · `xarray` |
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/sentinel3_lst_validation.ipynb) | [**sentinel3-lst**: Sentinel-3 SLSTR LST Validation](notebooks/sentinel3_lst_validation.ipynb) | Sentinel-3 LST validation workflow: live EOPF STAC discovery, synthetic LST and ERA5 values | `climval` · `xarray` · `zarr` |
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/climval_arraylake_integration.ipynb) | [**climval-arraylake**: Arraylake Integration](notebooks/climval_arraylake_integration.ipynb) | climval validation on Arraylake-stored climate data with version tagging | `climval` · `xarray` · `arraylake` |
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/neuralgcm_climval_validation.ipynb) | [**neuralgcm-eval**: NeuralGCM Forecast Validation](notebooks/neuralgcm_climval_validation.ipynb) | Validates NeuralGCM deterministic forecasts against ERA5 across WeatherBench2 headline variables | `climval` · `xarray` · `zarr` · `gcsfs` |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/era5_station_validation.ipynb) | [**groundtruth**: ERA5 Station Validation](notebooks/era5_station_validation.ipynb) | ERA5 from Open-Meteo against Meteostat station observations, daily, 2015 to 2020, in Oslo, Madrid, Nairobi, Toronto and Sydney | `climval` · `xarray` · `meteostat` |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/cmip6_taylor_diagram.ipynb) | [**cmip6-taylor**: CMIP6 Multi-Model Intercomparison](notebooks/cmip6_taylor_diagram.ipynb) | Five CMIP6 historical runs from the Pangeo catalog against ARCO-ERA5, monthly climatology, 1985 to 2014, Europe | `climval` · `xarray` · `gcsfs` |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/sentinel3_lst_validation.ipynb) | [**sentinel3-lst**: Sentinel-3 SLSTR LST Validation](notebooks/sentinel3_lst_validation.ipynb) | Sentinel-3 LST from the EOPF Zarr samples against ARCO-ERA5 skin temperature, May and June 2025, eastern Spain | `climval` · `xarray` · `zarr` · `pystac-client` |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/northflowlabs/northflow-notebooks/HEAD?filepath=notebooks/neuralgcm_climval_validation.ipynb) | [**neuralgcm-eval**: NeuralGCM Forecast Validation](notebooks/neuralgcm_climval_validation.ipynb) | Published NeuralGCM forecasts from WeatherBench2 against ARCO-ERA5, 10 start dates in 2020, global, days 1 to 10 | `climval` · `xarray` · `zarr` · `gcsfs` |
 
 ## Run them
 
-Click a Binder badge, wait for the environment to build, then run all cells.
+Click a Binder badge, wait for the environment to build, then run all cells. The notebooks download their data on the first run, and if a source cannot be reached they stop with an error. No substitute data is used.
 
 To run them locally:
 
