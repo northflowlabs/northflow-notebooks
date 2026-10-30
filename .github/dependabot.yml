@@ -1,0 +1,12 @@
+# Dependency updates once a month, grouped into one pull request per ecosystem.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    cooldown:
+      default-days: 14
+    groups:
+      all:
+        patterns: ["*"]
